@@ -1,6 +1,11 @@
 const { app, BrowserWindow, Menu } = require("electron");
 const path = require("node:path");
 
+// Agregar electron-reload para recarga automática
+require("electron-reload")(__dirname, {
+  electron: require(`${__dirname}/node_modules/electron`),
+});
+
 // Metodo para cargar la vista del index.html
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -15,7 +20,6 @@ const createWindow = () => {
   });
 
   win.loadFile("index.html");
-
 };
 
 app.on("window-all-closed", () => {
