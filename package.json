@@ -1,0 +1,18 @@
+{
+  "name": "electron-weather",
+  "version": "1.0.0",
+  "description": "Aplicacion multiplatorma para ver el clima",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "clima"
+  ],
+  "author": "micha3lvega",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.9"
+  }
+}
